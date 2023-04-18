@@ -1,1 +1,7 @@
 rootProject.name = 'spring-cloud-2022-demo'
+include 'demo-spring-cloud-eureka'
+include 'demo-spring-cloud-eureka:eureka-server'
+findProject(':demo-spring-cloud-eureka:eureka-server')?.name = 'eureka-server'
+include 'demo-spring-cloud-eureka:eureka-client'
+findProject(':demo-spring-cloud-eureka:eureka-client')?.name = 'eureka-client'
+
