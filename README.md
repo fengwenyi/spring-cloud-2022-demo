@@ -17,3 +17,21 @@ demo 89xx
     
 eureka-client 8901
 
+
+
+## 示例架构
+
+注册中心：Eureka
+
+配置中心：Nacos
+
+RPC: OpenFeign
+
+网关：gateway
+
+分布式事务：Seata
+
+## 示例
+
+用户，商品，订单
+

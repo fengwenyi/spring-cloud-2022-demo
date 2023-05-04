@@ -9,4 +9,6 @@ include 'demo-spring-cloud-openfeign:openfeign-provider'
 findProject(':demo-spring-cloud-openfeign:openfeign-provider')?.name = 'openfeign-provider'
 include 'demo-spring-cloud-openfeign:openfeign-consumer'
 findProject(':demo-spring-cloud-openfeign:openfeign-consumer')?.name = 'openfeign-consumer'
+include 'demo-spring-cloud-openfeign:openfeign-api'
+findProject(':demo-spring-cloud-openfeign:openfeign-api')?.name = 'openfeign-api'
 
