@@ -13,9 +13,15 @@ spring-cloud-2022-demo
 
 eureka-server 8761
 
+
+
 demo 89xx
     
-eureka-client 8901
+eureka-client   8901
+
+nacos-discovery 8902
+
+nacos-config    8903
 
 
 
