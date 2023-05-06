@@ -1,12 +1,13 @@
 # Nacos
 
- 版本：
- 
-nacos-server 2.2.2
+## nacos-server
 
+### 下载
+
+ 版本： nacos-server 2.2.2 <br>
 下载地址：https://github.com/alibaba/nacos/releases/tag/2.2.2
 
-配置使用数据库
+### 配置使用数据库
 
 建表，表名：nacos
 
@@ -49,3 +50,94 @@ sh shutdown.sh
 看日志：
 
 logs/start.out
+
+### 鉴权
+
+
+## spring-cloud-alibaba
+
+指定版本
+
+```groovy
+ext {
+    springCloudAlibabaVersion = "2022.0.0.0-RC2"
+}
+```
+
+依赖管理
+
+```groovy
+dependencyManagement {
+        imports {
+            mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${springCloudAlibabaVersion}"
+        }
+    }
+```
+
+## discovery
+
+依赖
+
+```groovy
+dependencies {
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery'
+}
+```
+
+配置
+
+```yaml
+spring:
+  application:
+    name: nacos-discovery
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+```
+
+编码
+
+```java
+@SpringBootApplication
+@EnableDiscoveryClient
+public class NacosDiscoveryApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(NacosDiscoveryApplication.class, args);
+    }
+
+}
+```
+
+![](../images/nacos-discovery.png)
+
+## config
+
+依赖
+
+```groovy
+dependencies {
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config'
+}
+```
+
+配置
+
+```yaml
+spring:
+  application:
+    name: nacos-config
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      config:
+        file-extension: yml
+  profiles:
+    active: dev
+```
+
+DataId: nacos-config-dev.yml <br>
+Group: DEFAULT_GROUP <br>
+
+![](../images/nacos-config-edit.png)
+
