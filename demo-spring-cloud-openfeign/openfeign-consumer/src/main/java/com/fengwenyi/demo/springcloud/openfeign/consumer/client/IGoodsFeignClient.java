@@ -1,9 +1,9 @@
 package com.fengwenyi.demo.springcloud.openfeign.consumer.client;
 
 import com.fengwenyi.api.result.ResultTemplate;
-import com.fengwenyi.demo.springcloud.openfeign.api.pojo.dto.GoodsConditionDto;
-import com.fengwenyi.demo.springcloud.openfeign.api.pojo.dto.GoodsDto;
-import com.fengwenyi.demo.springcloud.openfeign.api.pojo.vo.GoodsVo;
+import com.fengwenyi.demo.springcloud.openfeign.common.pojo.dto.GoodsConditionDto;
+import com.fengwenyi.demo.springcloud.openfeign.common.pojo.dto.GoodsDto;
+import com.fengwenyi.demo.springcloud.openfeign.common.pojo.vo.GoodsVo;
 import org.springframework.cloud.openfeign.SpringQueryMap;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
