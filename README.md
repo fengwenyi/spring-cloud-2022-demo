@@ -11,8 +11,9 @@ spring-cloud-2022-demo
 
 ## 端口
 
-eureka-server 8761
+eureka-server   8761
 
+gateway         9999
 
 
 demo 89xx

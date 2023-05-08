@@ -16,4 +16,7 @@ include 'demo-spring-cloud-nacos:nacos-config'
 findProject(':demo-spring-cloud-nacos:nacos-config')?.name = 'nacos-config'
 include 'demo-spring-cloud-nacos:nacos-discovery'
 findProject(':demo-spring-cloud-nacos:nacos-discovery')?.name = 'nacos-discovery'
+include 'demo-spring-cloud-gateway'
+include 'demo-spring-cloud-openfeign:openfeign-common'
+findProject(':demo-spring-cloud-openfeign:openfeign-common')?.name = 'openfeign-common'
 
