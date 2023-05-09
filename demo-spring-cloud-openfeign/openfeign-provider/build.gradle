@@ -3,8 +3,9 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery'
+//    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery'
     implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config'
     implementation(project(":demo-spring-cloud-openfeign:openfeign-common"))
     implementation "com.fengwenyi:JavaLib:${JavaLibVersion}"
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 }

@@ -17,12 +17,12 @@ gateway         9999
 
 
 demo 89xx
-    
-eureka-client   8901
 
-nacos-discovery 8902
-
-nacos-config    8903
+eureka-client           8901 <br>
+nacos-discovery         8902 <br>
+nacos-config            8903 <br>
+openfeign-provider      8904 <br>
+openfeign-consumer      8905 <br>
 
 
 
