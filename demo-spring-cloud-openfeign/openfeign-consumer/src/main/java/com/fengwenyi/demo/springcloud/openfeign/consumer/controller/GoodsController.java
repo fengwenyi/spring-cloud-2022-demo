@@ -24,7 +24,6 @@ public class GoodsController {
 
     @PostMapping("/add")
     public ResultTemplate<Void> add(@RequestBody GoodsDto goodsDto) {
-        System.out.println("==>" + goodsDto);
         return goodsFeignClient.add(goodsDto);
     }
 

@@ -1,17 +1,16 @@
 ### 新增商品
-#POST http://localhost:9999/feign-consumer/goods/add
-POST http://localhost:9999/feignConsumer/goods/add
+POST http://localhost:9999/feign-consumer/goods/add
 #POST http://localhost:8905/goods/add
 #POST http://localhost:8904/goods/add
 Content-Type: application/json
 
 {
-  "id":1,
+  "id": "1",
   "name":"iPhone 14",
   "brand":"Apple",
   "price": 7999
 }
 
 ### 查询商品列表
-GET http://localhost:9999/feignConsumer/goods/getList
+GET http://localhost:9999/feign-consumer/goods/getList
 Accept: application/json

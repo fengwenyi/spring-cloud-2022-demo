@@ -10,40 +10,6 @@ spring:
       config:
         file-extension: yml
 
-    gateway:
-
-      discovery: #是否与服务发现组件进行结合，通过 serviceId(必须设置成大写) 转发到具体的服务实例。默认为false，设为true便开启通过服务中心的自动根据 serviceId 创建路由的功能。
-        locator: #路由访问方式：http://Gateway_HOST:Gateway_PORT/大写的serviceId/**，其中微服务应用名默认大写访问。
-          enabled: true
-          lowerCaseServiceId: true
-
-      routes:
-        - id: openfeign-consumer
-          uri: lb://openfeign-consumer
-          predicates:
-            - Path=/feignConsumer/**
-          filters:
-            - StripPrefix=1
-        - id: baidu
-          uri: https://baidu.com
-          predicates:
-            - Path=/baidu
-          filters:
-            - StripPrefix=1
-        - id: erwin-cloud-blog                                    #网关路由到博客
-          uri: lb://erwin-cloud-blog
-          predicates:
-            - Path=/blog/**
-
-
-
-  #    gateway:
-#      routes:
-#        - id: openfeign-consumer
-#          uri: lb://openfeign-consumer
-#          predicates:
-#            - Path=/feign-consumer/**
-
   profiles:
     active: dev
 
@@ -52,8 +18,3 @@ management:
     web:
       exposure:
         include: '*'
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
