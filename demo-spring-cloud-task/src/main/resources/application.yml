@@ -1,0 +1,6 @@
+# 将Spring Cloud Task的日志记录设置为DEBUG, 可以更方便的让我们调试应用
+logging:
+  level:
+    org.springframework.cloud.task: DEBUG
+  # 设置application name (会转为task name)
+spring.application.name: HelloWorld
