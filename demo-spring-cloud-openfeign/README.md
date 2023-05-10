@@ -20,3 +20,20 @@ org.apache.hc.core5.http.ClassicHttpRequest
 org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(org.apache.hc.core5.http.HttpHost, org.apache.hc.core5.http.ClassicHttpRequest, org.apache.hc.core5.http.protocol.HttpContext)
 
 *** org.apache.hc.client5.http.impl.classic.CloseableHttpClient.doExecute
+
+
+## 记录
+
+Spring Cloud 新版移除了 Ribbon，使用了自己的 loadbalancer
+
+所以，添加依赖：
+
+```groovy
+implementation 'org.springframework.cloud:spring-cloud-loadbalancer'
+```
+
+
+## 官方文档
+
+
+

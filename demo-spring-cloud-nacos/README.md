@@ -76,6 +76,8 @@ dependencyManagement {
 
 ## discovery
 
+- [Nacos discovery](https://github.com/alibaba/spring-cloud-alibaba/wiki/Nacos-discovery)
+
 依赖
 
 ```groovy
