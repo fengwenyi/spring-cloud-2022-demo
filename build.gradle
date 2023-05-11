@@ -6,7 +6,7 @@ buildscript {
         springCloudVersion = "2022.0.2"
         springCloudAlibabaVersion = "2022.0.0.0-RC2"
         apiResultVersion = "2.7.4"
-        JavaLibVersion = "2.2.5"
+        JavaLibVersion = "2.2.6"
     }
 
     // 仓库配置
