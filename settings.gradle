@@ -18,4 +18,5 @@ include 'demo-spring-cloud-gateway'
 include 'demo-spring-cloud-openfeign:openfeign-common'
 findProject(':demo-spring-cloud-openfeign:openfeign-common')?.name = 'openfeign-common'
 include 'demo-spring-cloud-task'
+include 'demo-spring-cloud-function'
 
