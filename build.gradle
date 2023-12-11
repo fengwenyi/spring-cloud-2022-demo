@@ -1,12 +1,12 @@
 // 编译脚本
 buildscript {
     ext {
-        springBootVersion = "3.0.5"
+        springBootVersion = "3.2.0"
         springBootAdminVersion = "3.0.2"
-        springCloudVersion = "2022.0.2"
+        springCloudVersion = "2023.0.0"
         springCloudAlibabaVersion = "2022.0.0.0-RC2"
         apiResultVersion = "2.7.4"
-        JavaLibVersion = "2.2.6"
+        JavaLibVersion = "2.2.7"
     }
 
     // 仓库配置
